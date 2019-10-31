@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock The Empire</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/starwars-glyphicons.css" />
+    <link rel="stylesheet" href="Event/event.css" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Font Awesome Kit -->
+    <script
+      src="https://kit.fontawesome.com/0352503919.js"
+      crossorigin="SameSite"
+    ></script>
+    <script src="Main/switchItoE.js"></script>
+    <script src="Event/event.js"></script>
+    <script src="Event/test.js"></script>
+  </head>
+
+  <body id="barba-wrapper">
+    <div class="barba-container">
+      <div id="app">
+        <div style="font-family:StarJedi">
+          <i class="swg swg-starwars swg-5x" id="test"></i>
+          <i class="swg swg-title5 swg-5x"></i>
+        </div>
+        <div>Chars <a href="src/chars.html">here</a>.</div>
+      </div>
+
+      <div class="container" id="table"></div>
+
+      <div class="modal fade" id="warStatsModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header" id="modPart">
+              <h4 class="modal-title">uplinks disabled</h4>
+              <button type="button" class="close res" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body" id="modPart">
+              <div class="row Attack" id="Attack1">
+                <div class="col-sm-6">Action 1</div>
+                <i
+                  class="col-sm-1 checked far fa-check-circle"
+                  id="1action0"
+                ></i>
+                <i
+                  class="col-sm-1 action fa fa-satellite-dish"
+                  id="1action1"
+                ></i>
+                <i
+                  class="col-sm-1 action fa fa-satellite-dish"
+                  id="1action2"
+                ></i>
+                <i
+                  class="col-sm-1 action fa fa-satellite-dish"
+                  id="1action3"
+                ></i>
+              </div>
+              <div class="row Attack" id="Attack2">
+                <div class="col-sm-6">Action 2</div>
+                <i
+                  class="col-sm-1 checked far fa-check-circle"
+                  id="2action0"
+                ></i>
+                <i
+                  class="col-sm-1 action fa fa-satellite-dish"
+                  id="2action1"
+                ></i>
+                <i
+                  class="col-sm-1 action fa fa-satellite-dish"
+                  id="2action2"
+                ></i>
+                <i
+                  class="col-sm-1 action fa fa-satellite-dish"
+                  id="2action3"
+                ></i>
+              </div>
+              <div class="row Attack" id="Attack3">
+                <div class="col-sm-6">Action 3</div>
+                <i
+                  class="col-sm-1 checked far fa-check-circle"
+                  id="3action0"
+                ></i>
+                <i
+                  class="col-sm-1 action fa fa-satellite-dish"
+                  id="3action1"
+                ></i>
+                <i
+                  class="col-sm-1 action fa fa-satellite-dish"
+                  id="3action2"
+                ></i>
+                <i
+                  class="col-sm-1 action fa fa-satellite-dish"
+                  id="3action3"
+                ></i>
+              </div>
+              <div class="row Attack" id="Facilities">
+                <div class="col-sm-6">Facilities</div>
+                <i class="col-sm-1 fas fa-ban"></i>
+                <i
+                  class="col-sm-1 facility swg swg-deathstar-4"
+                  id="facility1"
+                ></i>
+                <i
+                  class="col-sm-1 facility swg swg-deathstar-4"
+                  id="facility2"
+                ></i>
+                <i
+                  class="col-sm-1 facility swg swg-deathstar-4"
+                  id="facility3"
+                ></i>
+              </div>
+            </div>
+            <div class="modal-footer" id="modPart">
+              <button
+                type="button"
+                class="btn btn-danger res"
+                data-dismiss="modal"
+                id="modalClose"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

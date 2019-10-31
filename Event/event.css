@@ -1,0 +1,93 @@
+body {
+  font-family: sans-serif;
+
+  min-width: 770px;
+  color: #dddddd;
+  background-image: url("../src/img/space.jpg");
+  background-repeat: repeat-5;
+  background-color: #222222;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url("../src/Starjedi.ttf") format("truetype");
+  font-family: "Starjedi";
+}
+
+* {
+  color: #dddddd;
+  text-align: center;
+  vertical-align: middle;
+  font-family: starjedi;
+}
+
+#table {
+  padding: 3px;
+  margin-top: 5px;
+  max-width: 65%;
+}
+
+.member {
+  border-top: 1px solid;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  height: 60px;
+  min-width: 700px;
+  vertical-align: middle;
+}
+
+.mName {
+  padding-top: 0.3rem;
+  font-size: 1.5rem;
+  height: 100%;
+  display: inline-block;
+  text-align: left;
+}
+
+.ofc {
+  font-size: 2rem;
+  height: 100%;
+}
+
+.prep {
+  height: 100%;
+}
+
+.act {
+  font-size: 2.7rem;
+  padding-top: 0.15rem;
+  height: 100%;
+}
+
+.stats,
+.stats p {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.checked,
+.fa-ban,
+.action {
+  padding-top: 0.5rem;
+}
+
+.facility {
+  padding-top: 0.6rem;
+}
+
+.Attack {
+  margin-top: 5%;
+  font-size: 1.5rem;
+}
+
+#modalClose {
+  background-color: #daa520;
+  color: black;
+  border: 5px outset darkslategray;
+}
+
+#modPart {
+  background-color: #222222;
+}

@@ -1,0 +1,226 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("../src/img/space.jpg");
+  background-repeat: repeat-5;
+  font-family: sans-serif;
+  min-width: 770px;
+  color: #dddddd;
+}
+
+@font-face {
+  src: url("../src/Starjedi.ttf") format("truetype");
+  font-family: "Starjedi";
+}
+
+@font-face {
+  src: url("../src/anita-semi-square.normaali.ttf") format("truetype");
+  font-family: "SFA";
+}
+
+* {
+  color: #dddddd;
+  text-align: center;
+  vertical-align: middle;
+  font-family: Starjedi;
+  z-index: 1;
+  position: relative;
+}
+
+.unused {
+  color: #333333;
+  border: 1px dashed darkgoldenrod;
+}
+
+.members {
+  display: none;
+  max-width: 1000px;
+  align-items: center;
+  margin: auto;
+}
+
+.newMember {
+  position: relative;
+  z-index: 2;
+  display: flex;
+}
+
+.nameTag {
+  font-size: 1.8rem;
+  margin-left: 15%;
+  margin-right: 1rem;
+}
+
+input {
+  font-family: SFA;
+}
+
+.label {
+  font-size: 80%;
+  font-family: SFA;
+  font-weight: bold;
+  border-radius: 15%;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 3px;
+  text-shadow: none;
+  color: #333;
+}
+
+.hqLvl,
+.form-control,
+.dropdown-menu {
+  position: relative;
+  background-color: #333;
+  color: #ddd;
+  font-weight: normal;
+  z-index: 2;
+}
+
+.hqLvl:hover {
+  background-color: #fdd835;
+  color: #333;
+}
+
+.btn {
+  align-self: left;
+  border: 5px outset darkslategray;
+}
+
+.btn-default {
+  color: #ddd;
+  background-color: #333;
+}
+
+.btn-default:hover {
+  color: #fdd835;
+}
+
+#hqSelection {
+  width: 10rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.member {
+  border-top: 1px solid;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  height: 150px;
+  min-width: 700px;
+  vertical-align: middle;
+  background-color: #333333;
+  background-image: url("../src/img/steel3.jpg");
+  background-blend-mode: overlay;
+  border: outset 5px gray;
+  margin-bottom: 0;
+}
+
+.ofc {
+  height: 100%;
+  padding-top: 1rem;
+}
+
+.nameM {
+  font-size: 2em;
+  padding: 0px;
+  text-align: left;
+  align-self: left;
+  min-height: 80%;
+  width: 22rem;
+}
+
+table {
+  margin-top: 5px;
+  height: 100%;
+}
+
+th {
+  font-weight: normal;
+  padding: 0px;
+}
+
+td {
+  font-size: 1.5rem;
+  vertical-align: top;
+}
+
+.moreStats p {
+  margin: 0;
+  text-align: left;
+  text-shadow: -1px 0 #333333, 0 1px #333333, 1px 0 #333333, 0 -1px #333333;
+}
+
+.moreStats {
+  min-width: 90%;
+  max-width: 950px;
+  height: 75px;
+  background-color: #3f3f3f;
+  background-image: url("../src/img/steel.jpg");
+  background-size: 250px;
+  background-blend-mode: overlay;
+  border-left: 2px solid #666666;
+  border-right: 2px solid #666666;
+  border-bottom: 2px solid #666666;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  text-align: left;
+}
+
+.extraStat {
+  display: inline-block;
+}
+
+.delText {
+  justify-content: center;
+}
+.delButtons {
+  width: 40%;
+  justify-self: center;
+  margin-left: 30%;
+}
+
+#toast-area {
+  position: fixed;
+  top: 30px;
+  right: 20px;
+  z-index: 2;
+  width: 300px;
+}
+
+.toast {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.toast-header {
+  height: 33px;
+  font-family: SFA;
+  color: #ddd;
+  background-color: #222;
+  font-size: 1rem;
+}
+.toast-body {
+  height: 66px;
+  font-family: SFA;
+  color: #ccc;
+  background-color: rgba(50, 50, 50, 0.5);
+  text-align: left;
+}
+
+.slide-in{
+  animation: slide-in 1s ease forwards;
+}
+
+@keyframes slide-in{
+  from{
+    transform: translateX(100%);
+    visibility: visible;
+  }
+  to{
+    transform: translateX(0%);
+  }
+  }
+}

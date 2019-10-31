@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock The Empire</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/starwars-glyphicons.css" />
+    <link rel="stylesheet" href="Main/index.css" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Font Awesome Kit -->
+    <script
+      src="https://kit.fontawesome.com/0352503919.js"
+      crossorigin="SameSite"
+    ></script>
+    <script src="Main/index.js"></script>
+    <script src="Main/switchItoE.js"></script>
+  </head>
+
+  <body id="barba-wrapper">
+    <div class="barba-container">
+      <div id="toast-area"></div>
+
+      <div class="members" id="members">
+        <div class="btn-group buttons">
+          <button class="btn btn-primary" id="btn-addMember">add member</button>
+          <button class="btn btn-warning" id="btn-startEvent">
+            <a href="event.html">start squad war</a>
+          </button>
+        </div>
+
+        <div class="newMember">
+          <div class="nameTag">name</div>
+          <form class="form-inline" id="newMemberForm">
+            <div class="form-group">
+              <input type="name" class="form-control" id="newName" />
+            </div>
+          </form>
+
+          <div class="dropdown">
+            <button
+              class="btn btn-default dropdown-toggle"
+              type="button"
+              data-toggle="dropdown"
+              id="hqSelection"
+            >
+              hq level <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li class="hqLvl" id="shq2">ii</li>
+              <li class="hqLvl" id="shq3">iii</li>
+              <li class="hqLvl" id="shq4">iv</li>
+              <li class="hqLvl" id="shq5">v</li>
+              <li class="hqLvl" id="shq6">vi</li>
+              <li class="hqLvl" id="shq7">vii</li>
+              <li class="hqLvl" id="shq8">viii</li>
+              <li class="hqLvl" id="shq9">ix</li>
+              <li class="hqLvl" id="shq10">x</li>
+              <li class="hqLvl" id="shqPrestige">Prestige</li>
+            </ul>
+          </div>
+          <button class="btn btn-warning" id="submitMember">
+            Submit
+          </button>
+        </div>
+      </div>
+
+      <div class="modal fade" id="editMemberModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header" id="modPart">
+              <h4 class="modal-title">membername</h4>
+              <button type="button" class="close res" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body" id="modPart">
+              <div class="row Attack" id="Attack1">
+                <div class="col-sm-6">Action 1</div>
+                <i
+                  class="col-sm-1 checked far fa-check-circle"
+                  id="1action0"
+                ></i>
+                <i
+                  class="col-sm-1 action fa fa-satellite-dish"
+                  id="1action1"
+                ></i>
+                <i
+                  class="col-sm-1 action fa fa-satellite-dish"
+                  id="1action2"
+                ></i>
+                <i
+                  class="col-sm-1 action fa fa-satellite-dish"
+                  id="1action3"
+                ></i>
+              </div>
+              <div class="row Attack" id="Attack2">
+                <div class="col-sm-6">Action 2</div>
+                <i
+                  class="col-sm-1 checked far fa-check-circle"
+                  id="2action0"
+                ></i>
+                <i
+                  class="col-sm-1 action fa fa-satellite-dish"
+                  id="2action1"
+                ></i>
+                <i
+                  class="col-sm-1 action fa fa-satellite-dish"
+                  id="2action2"
+                ></i>
+                <i
+                  class="col-sm-1 action fa fa-satellite-dish"
+                  id="2action3"
+                ></i>
+              </div>
+              <div class="row Attack" id="Attack3">
+                <div class="col-sm-6">Action 3</div>
+                <i
+                  class="col-sm-1 checked far fa-check-circle"
+                  id="3action0"
+                ></i>
+                <i
+                  class="col-sm-1 action fa fa-satellite-dish"
+                  id="3action1"
+                ></i>
+                <i
+                  class="col-sm-1 action fa fa-satellite-dish"
+                  id="3action2"
+                ></i>
+                <i
+                  class="col-sm-1 action fa fa-satellite-dish"
+                  id="3action3"
+                ></i>
+              </div>
+              <div class="row Attack" id="Facilities">
+                <div class="col-sm-6">Facilities</div>
+                <i class="col-sm-1 fas fa-ban"></i>
+                <i
+                  class="col-sm-1 facility swg swg-deathstar-4"
+                  id="facility1"
+                ></i>
+                <i
+                  class="col-sm-1 facility swg swg-deathstar-4"
+                  id="facility2"
+                ></i>
+                <i
+                  class="col-sm-1 facility swg swg-deathstar-4"
+                  id="facility3"
+                ></i>
+              </div>
+            </div>
+            <div class="modal-footer" id="modPart">
+              <button
+                type="button"
+                class="btn btn-danger res"
+                data-dismiss="modal"
+                id="modalClose"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
